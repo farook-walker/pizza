@@ -1,0 +1,17 @@
+<section class="gallery">
+    <h1 class="gallery_title">Выберите свою любимую пиццу</h1>
+    <div class="gallery_blocks">
+        <div *ngFor="let item of galleryItems$ | async" class="gallery_blocks__block">
+            <div>
+                <a (click)="currentPizza = item"><img [attr.src]="'/assets/img/pizza/'+item.img"/></a>
+                <label class="gallery_blocks_title">{{item.title}}</label>
+                <div class="gallery_blocks_desc">{{item.ingredients}}</div>
+                <a class="gallery_blocks_btn">В корзину</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{currentPizza?.img}}
+<div [hidden]="!currentPizza" class="image_overlay" [style.backgroundImage]="'url(\'/assets/img/pizza/'+currentPizza?.img+'\')'" (click)="currentPizza = undefined">
+    
+</div>

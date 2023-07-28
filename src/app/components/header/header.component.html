@@ -1,0 +1,18 @@
+<header>
+    <div class="header_wrapper">
+        <div class="header_brand">
+            <div class="header_brand__logo"></div>
+            <label class="header_brand__text"><span>Pizza</span><span>Cheff</span></label>
+        </div>
+        <div class="header_menu">
+            <ul class="header_menu__list" [ngClass]="{'active': isActive}">
+                <li *ngFor="let item of menuItems"><a>{{item}}</a></li>
+            </ul>
+            <a class="header_hamburger" (click)="isActive=!isActive">
+                <span></span>            
+                <span></span>            
+                <span></span>            
+            </a>
+        </div>
+    </div>
+</header>

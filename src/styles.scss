@@ -1,0 +1,77 @@
+$fa-font-path: '/assets/fonts';
+$defaultFontFamily: 'MullerRegular';
+$neutralGrey: #989898;
+
+@font-face 
+{
+    font-family: 'MullerRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('#{$fa-font-path}/MullerRegular.woff2') format('woff2'),
+      url('#{$fa-font-path}/MullerRegular.woff') format('woff'),
+      url('#{$fa-font-path}/MullerRegular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: 'MullerBlack';
+    font-style: normal;
+    font-weight: 600;
+    font-display: block;
+    src: url('#{$fa-font-path}/MullerBlack.woff2') format('woff2'),
+      url('#{$fa-font-path}/MullerBlack.woff') format('woff'),
+      url('#{$fa-font-path}/MullerBlack.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: 'MullerExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: block;
+    src: url('#{$fa-font-path}/MullerExtraBold.woff2') format('woff2'),
+      url('#{$fa-font-path}/MullerExtraBold.woff') format('woff'),
+      url('#{$fa-font-path}/MullerExtraBold.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: 'MullerBold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: block;
+    src: url('#{$fa-font-path}/MullerBold.woff2') format('woff2'),
+      url('#{$fa-font-path}/MullerBold.woff') format('woff'),
+      url('#{$fa-font-path}/MullerBold.ttf') format('truetype');
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+html 
+{
+    font-size: 12px;
+    font-family: $defaultFontFamily;
+    overflow-x: hidden;
+}
+
+body 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.wrapper
+{
+    margin: 0 auto;
+    width: 1200px;
+    @media screen and (max-width: 1200px)
+    {
+        width: 100%;
+    }
+}

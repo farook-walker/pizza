@@ -1,0 +1,23 @@
+<section class="promo">
+    <div class="promo_wrapper">
+        <div class="promo_body">
+            <div class="promo_body__title">
+                <label>Самая вкусная пицца в мире</label>
+                <label>только в Pizza Cheff</label>
+            </div>
+            <div class="promo_body__points">
+                <div class="promo_body__points_item" *ngFor="let item of promoItems">
+                    <img [attr.src]="item.icon">
+                    <div>
+                        <label class="promo_body__points_item_text_title">{{item.title}}</label>
+                        <div class="promo_body__points_item_text_desc">{{item.desc}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo_pic">
+            <img src="/assets/img/promo/pizza_big.png">
+        </div>
+    </div>
+    <a class="promo_body__choose_pizza_btn">Выбрать пиццу</a>
+</section>

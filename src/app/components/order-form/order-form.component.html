@@ -1,0 +1,22 @@
+<section class="order_block">
+    <div class="order_block__text">
+        <h1>
+            <span>Хватит думать!</span>
+            <span>Доставим заказ за 30 минут!</span>
+        </h1>
+        <p>
+            Мы  гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!
+        </p>
+    </div> 
+    <div class="order_block__form">
+        <form [formGroup]="OrderForm" (ngSubmit)="OnSubmit()">
+            <input type="text" placeholder="Ваше имя" formControlName="name" [ngClass]="{'invalid': OrderForm.get('name')?.dirty && OrderForm.get('name')?.touched && (OrderForm.get('name')?.errors?.['required'] || OrderForm.get('name')?.errors?.['pattern'])}"/>
+            <input type="text" placeholder="Адрес доставки" formControlName="address" [ngClass]="{'invalid': OrderForm.get('address')?.dirty && OrderForm.get('address')?.touched && OrderForm.get('address')?.errors?.['required']}"/>
+            <input type="text" placeholder="Телефон" formControlName="phone" [ngClass]="{'invalid': OrderForm.get('phone')?.dirty && OrderForm.get('phone')?.touched && (OrderForm.get('phone')?.errors?.['required'] || OrderForm.get('phone')?.errors?.['pattern'])}"/>
+            <button type="submit">Оформить заказ</button>
+        </form>
+    </div>
+    <div class="order_block__pic">
+        <img src="/assets/img/pizzzzza.png"/>
+    </div>
+</section>
