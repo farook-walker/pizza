@@ -10,28 +10,28 @@ export class PromoComponent {
   promoItems = <Array<IPromo>>[
     {
       title: 'Лучшее тесто',
-      icon: '/assets/img/promo/hop.png',
+      icon: 'assets/img/promo/hop.png',
       desc: `Мы создаем тесто только из 
       отборной итальянской муки
       наивысшего качества`
     },
     {
       title: 'лучшие повара',
-      icon: '/assets/img/promo/kitchen-pack.png',
+      icon: 'assets/img/promo/kitchen-pack.png',
       desc: `Пиццы готовят самые
       профессиональные 
       итальянские повара`
     },
     {
       title: 'гарантия качества',
-      icon: '/assets/img/promo/seo-and-web.png',
+      icon: 'assets/img/promo/seo-and-web.png',
       desc: `Наша пиццерия получила
       множество наград и 
       признаний по всему миру`
     },
     {
       title: 'отборные рецепты',
-      icon: '/assets/img/promo/holidays.png',
+      icon: 'assets/img/promo/holidays.png',
       desc: `Мы используем рецепты
       от мировых лидеров
       в изготовлении пиццы`
