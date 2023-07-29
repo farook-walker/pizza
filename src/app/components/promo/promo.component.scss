@@ -1,3 +1,5 @@
+@import "../../utils/sass/colors.scss";
+
 .promo
 {
     padding: 140px 0;
@@ -46,7 +48,7 @@
 
             > label:first-child
             {
-                color: #bd975c;
+                color: $lightOrange3;
                 white-space: nowrap;
                 @media screen and (max-width: 1200px) {
                     white-space: pre-wrap;
@@ -55,7 +57,7 @@
 
             > label:last-child
             {
-                color: #ffc468;
+                color: $lightOrange;
             }
         }
 
@@ -77,14 +79,14 @@
 
                 .promo_body__points_item_text_title
                 {
-                    color: #ffaf18;
+                    color: $lightOrange2;
                     font-size: 16px;
                     line-height: 24px;
                 }
 
                 .promo_body__points_item_text_desc
                 {
-                    color: #b99150;
+                    color: $lightOrange4;
                     line-height: 16px;
                     text-align: left;
                 }
@@ -119,7 +121,7 @@
 .promo_body__choose_pizza_btn
 {
     display: inline-block;
-    background-color: #ffaf18;
+    background-color: $lightOrange2;
     padding: 20px 40px;
     font-size: 16px;
     cursor: pointer;

@@ -1,3 +1,5 @@
+@import "../../utils/sass/colors.scss";
+
 .order_block
 {
     display: flex;
@@ -27,16 +29,16 @@
             font-family: 'MullerExtraBold';
             > span:first-child
             {
-                color: #ffc468;
+                color: $lightOrange;
             }
             > span:last-child
             {
-                color: #bd975c;
+                color: $lightOrange3;
             }
         }
         > p
         {
-            color: #b99150;
+            color: $lightOrange4;
             font-size: 16px;
             line-height: 24px;
         }
@@ -57,7 +59,7 @@
 
             input
             {
-                border: 1px solid #b99150;
+                border: 1px solid $lightOrange4;
                 padding: 20px;
                 width: 100%;
                 box-sizing: border-box;
@@ -72,7 +74,7 @@
             {
                 display: block;
                 width: 100%;
-                background-color: #ffaf18;
+                background-color: $lightOrange2;
                 padding: 10px;
                 box-sizing: border-box;
                 color: #000;
@@ -85,14 +87,14 @@
             }
 
             ::placeholder {
-                color: #cba86e;
+                color: $lightOrange5;
                 opacity: 1;
             }
             :-ms-input-placeholder {
-                color: #cba86e;
+                color: $lightOrange5;
             }
             ::-ms-input-placeholder {
-                color: #cba86e;
+                color: $lightOrange5;
             }
 
         }
